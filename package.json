@@ -4,7 +4,7 @@
   "description": "A reusable Babel configuration.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --ui exports **/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/resistdesign/resistdesign-babel-config/issues"
   },
-  "homepage": "https://github.com/resistdesign/resistdesign-babel-config#readme"
+  "homepage": "https://github.com/resistdesign/resistdesign-babel-config#readme",
+  "dependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-runtime": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "expect.js": "^0.3.1",
+    "react": "^15.6.1"
+  }
 }
