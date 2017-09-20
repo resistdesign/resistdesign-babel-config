@@ -4,6 +4,14 @@ export default class SampleCode {
   constructor () {
   }
 
+  async deferredMethodA () {
+    return true;
+  }
+
+  async deferredMethodB () {
+    return await this.deferredMethodA();
+  }
+
   getJSX () {
     const crazyProps = {
       thisIs: 'totallyCrazy'

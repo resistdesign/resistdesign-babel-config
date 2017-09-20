@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   babelrc: false,
   ignore: false,
@@ -15,7 +17,8 @@ module.exports = {
       {
         helpers: true,
         polyfill: true,
-        regenerator: true
+        regenerator: true,
+        moduleName: path.dirname(require.resolve('babel-runtime/package'))
       }
     ]
   ],
