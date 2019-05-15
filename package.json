@@ -17,18 +17,19 @@
   },
   "homepage": "https://github.com/resistdesign/resistdesign-babel-config#readme",
   "dependencies": {
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-function-bind": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.5.2",
-    "babel-runtime": "^6.23.0"
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "babel-plugin-add-module-exports": "^1.0.2"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
     "expect.js": "^0.3.1",
-    "react": "^15.6.1"
+    "mocha": "^6.1.4",
+    "react": "^16.8.6"
   }
 }
