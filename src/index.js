@@ -57,7 +57,7 @@ module.exports = {
     // Stage 3
     require.resolve('@babel/plugin-syntax-dynamic-import'),
     require.resolve('@babel/plugin-syntax-import-meta'),
-    require.resolve('@babel/plugin-proposal-class-properties'),
+    require.resolve('babel-plugin-transform-class-properties'),
     require.resolve('@babel/plugin-proposal-json-strings'),
 
     // Runtime
