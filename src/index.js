@@ -1,4 +1,4 @@
-const path = require('path');
+const Path = require('path');
 
 module.exports = {
   babelrc: false,
@@ -66,7 +66,7 @@ module.exports = {
       {
         helpers: true,
         regenerator: true,
-        absoluteRuntime: path.dirname(
+        absoluteRuntime: Path.dirname(
           require.resolve('@babel/runtime/package')
         )
       }
