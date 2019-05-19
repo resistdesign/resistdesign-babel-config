@@ -1,18 +1,26 @@
 import React from 'react';
 
+const BASE_OBJECT = {
+  a: 'a',
+  b: 'b',
+  c: 'c'
+};
+
 export default class SampleCode {
-  constructor () {
+  static STATICS = Object.assign({}, BASE_OBJECT);
+
+  constructor() {
   }
 
-  async deferredMethodA () {
+  async deferredMethodA() {
     return true;
   }
 
-  async deferredMethodB () {
+  async deferredMethodB() {
     return await this.deferredMethodA();
   }
 
-  getJSX () {
+  getJSX() {
     const crazyProps = {
       thisIs: 'totallyCrazy'
     };

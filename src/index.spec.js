@@ -24,6 +24,10 @@ module.exports = {
 
       const SampleCode = require(SAMPLE_CODE_OUTPUT_FILE_REQUIRE_PATH);
       expect(SampleCode).to.be.a(Function);
+      expect(SampleCode.STATICS).to.be.an(Object);
+      expect(SampleCode.STATICS.a).to.be('a');
+      expect(SampleCode.STATICS.b).to.be('b');
+      expect(SampleCode.STATICS.c).to.be('c');
 
       const sampleCodeInstance = new SampleCode();
       expect(sampleCodeInstance.deferredMethodA).to.be.a(Function);
