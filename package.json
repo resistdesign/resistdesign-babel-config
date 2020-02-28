@@ -1,6 +1,6 @@
 {
   "name": "resistdesign-babel-config",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "A reusable Babel configuration.",
   "main": "src/index.js",
   "scripts": {
