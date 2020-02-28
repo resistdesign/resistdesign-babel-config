@@ -1,6 +1,13 @@
 import React from 'react';
+import type {ReactNode} from 'react';
 
-const BASE_OBJECT = {
+type BaseObjectType = {
+  a: string,
+  b: string,
+  c: string
+};
+
+const BASE_OBJECT: BaseObjectType = {
   a: 'a',
   b: 'b',
   c: 'c'
@@ -20,7 +27,7 @@ export default class SampleCode {
     return await this.deferredMethodA();
   }
 
-  getJSX() {
+  getJSX(): ReactNode {
     const crazyProps = {
       thisIs: 'totallyCrazy'
     };

@@ -7,6 +7,9 @@ module.exports = {
     /^.*\.jsx$/m
   ],
   plugins: [
+    // Flow
+    require.resolve('@babel/plugin-transform-flow-strip-types'),
+
     // JSX
     require.resolve('@babel/plugin-transform-react-jsx'),
 
